@@ -20,4 +20,6 @@ io.on("connection", (socket) => {
     });
 });
 
-server.listen(3030);
+server.listen(process.env.PORT || 3030, () =>{
+    console.log("App is active!");
+});
